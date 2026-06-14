@@ -47,6 +47,8 @@ export default function Technologies() {
             <button
               key={cat.key}
               onClick={() => setActive(cat.key)}
+              aria-label={`Filter by ${cat.label}`}
+              aria-pressed={active === cat.key}
               className={`font-mono text-sm px-5 py-2.5 rounded-xl border-2 transition-all duration-200 font-medium ${
                 active === cat.key
                   ? 'text-white border-transparent shadow-md'
