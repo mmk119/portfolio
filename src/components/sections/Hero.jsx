@@ -88,7 +88,7 @@ export default function Hero() {
         {/* Photo */}
         <div className="mb-10">
           <img
-            src="/myphoto.jpeg"
+            src={import.meta.env.BASE_URL + "myphoto.jpeg"}
             alt="Mohammad Kassem"
             className="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover mx-auto border-4 border-white shadow-lg ring-2 ring-accent/20"
           />

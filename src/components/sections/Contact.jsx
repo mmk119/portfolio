@@ -45,7 +45,7 @@ export default function Contact() {
       value: 'mohamad_kassem55',
       href: personalInfo.instagram,
       icon: (
-        <img src="/instalogo.png" alt="Instagram" width="20" height="20" />
+        <img src={import.meta.env.BASE_URL + "instalogo.png"} alt="Instagram" width="20" height="20" />
       ),
     },
     {

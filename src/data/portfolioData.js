@@ -86,7 +86,7 @@ export const experiences = [
 export const projects = [
   {
     id: 1,
-    icon: "/CivicConnect.png",
+    icon: "/portfolio/CivicConnect.png",
     name: "CivicConnect",
     period: "2026",
     type: "Full Stack",
