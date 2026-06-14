@@ -1,0 +1,17 @@
+import { useState, useEffect } from 'react';
+
+/**
+ * Debounces a rapidly changing value (e.g., search input) to avoid
+ * re-triggering expensive filtering on every keystroke. The consumer
+ * only receives the settled value after `delay` ms of inactivity.
+ */
+export function useDebounce<T>(value: T, delay: number = 300): T {
+  const [debounced, setDebounced] = useState<T>(value);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDebounced(value), delay);
+    return () => clearTimeout(timer);
+  }, [value, delay]);
+
+  return debounced;
+}
