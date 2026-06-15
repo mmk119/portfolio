@@ -4,7 +4,7 @@ export const personalInfo = {
   role: "Full Stack Engineer",
   tagline: "I build things for the web, end to end.",
   summary:
-    "I recently graduated from AUB with a CS degree and I'm currently balancing two internships. I love building things that matter, whether that's a volunteer platform used by hundreds of real people, an ML model that segments brain tumors, or a mood journaling app that listens to you speak. I care deeply about writing code that still makes sense six months later.",
+    "I'm a recent CS grad from AUB, currently balancing two internships. I've built a full-stack volunteer platform with role-based auth and moderation, an ML model that segments brain tumors, and a mood-journaling app you talk to instead of type into. I care most about writing code that still makes sense later.",
   location: "Lebanon",
   email: "mohammad15kassem@gmail.com",
   github: "https://github.com/mmk119",
