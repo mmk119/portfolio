@@ -12,8 +12,8 @@ export default function About() {
           <h2 className="section-title">Who I am</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-14 items-start">
-          <div className="space-y-6 text-muted text-lg leading-relaxed text-justify">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          <div className="space-y-4 text-muted text-base leading-relaxed text-justify">
             <p>
               I studied CS at{' '}
               <span className="text-accent font-semibold">AUB</span> on a full scholarship and graduated this year.
@@ -50,31 +50,31 @@ export default function About() {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="card p-6">
-              <h3 className="text-sm font-mono text-blue uppercase tracking-widest mb-4 font-semibold">Certifications</h3>
-              <div className="space-y-3">
+          <div className="space-y-4">
+            <div className="card p-5">
+              <h3 className="text-xs font-mono text-blue uppercase tracking-widest mb-3 font-semibold">Certifications</h3>
+              <div className="space-y-2.5">
                 {certifications.map((cert, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <span className="text-green mt-0.5 text-sm font-bold">✓</span>
+                  <div key={i} className="flex items-start gap-2.5">
+                    <span className="text-green mt-0.5 text-xs font-bold">✓</span>
                     <div>
-                      <div className="text-base text-text font-medium">{cert.name}</div>
-                      <div className="text-sm text-muted">{cert.issuer}</div>
+                      <div className="text-sm text-text font-medium">{cert.name}</div>
+                      <div className="text-xs text-muted">{cert.issuer}</div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="card p-6">
-              <h3 className="text-sm font-mono text-accent uppercase tracking-widest mb-4 font-semibold">Leadership & Activities</h3>
-              <div className="space-y-4">
+            <div className="card p-5">
+              <h3 className="text-xs font-mono text-accent uppercase tracking-widest mb-3 font-semibold">Leadership & Activities</h3>
+              <div className="space-y-3">
                 {activities.map((act, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <span className="text-xl flex-shrink-0">{act.icon}</span>
+                  <div key={i} className="flex items-start gap-2.5">
+                    <span className="text-base flex-shrink-0">{act.icon}</span>
                     <div>
-                      <div className="text-base text-text font-semibold">{act.title}</div>
-                      <div className="text-sm text-muted mt-0.5 leading-relaxed">{act.description}</div>
+                      <div className="text-sm text-text font-semibold">{act.title}</div>
+                      <div className="text-xs text-muted mt-0.5 leading-relaxed">{act.description}</div>
                     </div>
                   </div>
                 ))}

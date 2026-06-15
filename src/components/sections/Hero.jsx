@@ -84,43 +84,43 @@ export default function Hero() {
         <div className="absolute w-3 h-3 rounded-full bg-green/15 bottom-[35%] left-[35%] animate-float-reverse" />
       </div>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12 lg:px-16 text-center">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-5 md:px-10 text-center">
         {/* Photo */}
-        <div className="mb-10">
+        <div className="mb-6">
           <img
             src={import.meta.env.BASE_URL + "myphoto.jpeg"}
             alt="Mohammad Kassem"
-            className="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover mx-auto border-4 border-white shadow-lg ring-2 ring-accent/20"
+            className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover mx-auto border-3 border-white shadow-lg ring-2 ring-accent/20"
           />
         </div>
 
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2.5 bg-white border border-border rounded-full px-5 py-2.5 mb-8 text-base font-mono text-muted shadow-sm">
+        <div className="inline-flex items-center gap-2 bg-white border border-border rounded-full px-4 py-2 mb-6 text-sm font-mono text-muted shadow-sm">
           <span className="glow-dot" />
           {personalInfo.availableForWork ? 'Open to opportunities' : 'Currently working'}
         </div>
 
         {/* Name */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none tracking-tight mb-8">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-none tracking-tight mb-6">
           <span className="text-text">Hi, I'm </span>
           <span className="text-gradient">Mohammad</span>
         </h1>
 
         {/* Typewriter */}
-        <div className="h-14 flex items-center justify-center mb-10">
-          <span className="font-mono text-2xl sm:text-3xl md:text-4xl text-blue">
+        <div className="h-10 flex items-center justify-center mb-6">
+          <span className="font-mono text-xl sm:text-2xl md:text-3xl text-blue">
             {displayed}
             <span className="animate-pulse text-accent">|</span>
           </span>
         </div>
 
         {/* Summary */}
-        <p className="text-muted text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-14 text-justify">
+        <p className="text-muted text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10 text-justify">
           {personalInfo.summary}
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
           <a href="#projects" className="btn-primary">
             View Projects
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -140,15 +140,15 @@ export default function Hero() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-xl mx-auto">
+        <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-md mx-auto">
           {[
             { num: '6+', label: 'Projects' },
             { num: '2', label: 'Active Roles' },
             { num: 'AUB', label: 'Scholar' },
           ].map(stat => (
-            <div key={stat.label} className="text-center bg-white border border-border rounded-2xl p-4 sm:p-6 shadow-sm">
-              <div className="font-mono text-2xl sm:text-3xl font-bold text-gradient">{stat.num}</div>
-              <div className="text-xs sm:text-sm text-muted uppercase tracking-widest mt-1.5">{stat.label}</div>
+            <div key={stat.label} className="text-center bg-white border border-border rounded-xl p-3 sm:p-4 shadow-sm">
+              <div className="font-mono text-xl sm:text-2xl font-bold text-gradient">{stat.num}</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">{stat.label}</div>
             </div>
           ))}
         </div>

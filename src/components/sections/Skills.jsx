@@ -33,18 +33,18 @@ function SkillCard({ cat }) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="card-3d p-8"
+      className="card-3d p-5"
     >
-      <div className="flex items-center gap-4 mb-6">
-        <div className={`w-12 h-12 rounded-xl border flex items-center justify-center text-2xl ${colors.icon}`}>
+      <div className="flex items-center gap-3 mb-4">
+        <div className={`w-9 h-9 rounded-lg border flex items-center justify-center text-lg ${colors.icon}`}>
           {cat.icon}
         </div>
-        <h3 className={`font-bold text-lg ${colors.title}`}>{cat.label}</h3>
+        <h3 className={`font-bold text-sm ${colors.title}`}>{cat.label}</h3>
       </div>
-      <ul className="space-y-4">
+      <ul className="space-y-2.5">
         {cat.items.map((item, i) => (
-          <li key={i} className="flex items-start gap-3 text-base text-muted">
-            <span className={`${colors.check} mt-0.5 flex-shrink-0 font-bold`}>✓</span>
+          <li key={i} className="flex items-start gap-2.5 text-sm text-muted">
+            <span className={`${colors.check} mt-0.5 flex-shrink-0 font-bold text-xs`}>✓</span>
             <span>{item}</span>
           </li>
         ))}
@@ -67,7 +67,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 gap-4 lg:gap-5">
           {skillCategories.map((cat) => (
             <SkillCard key={cat.label} cat={cat} />
           ))}

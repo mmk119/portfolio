@@ -72,38 +72,38 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="space-y-3">
             {contactLinks.map(link => (
               <a
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith('mailto') ? undefined : '_blank'}
                 rel="noopener noreferrer"
-                className="card p-6 flex items-center gap-4 group hover:border-accent/40"
+                className="card p-4 flex items-center gap-3 group hover:border-accent/40"
               >
-                <div className="w-12 h-12 rounded-xl bg-violet-50 border border-violet-200 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-violet-100 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-violet-50 border border-violet-200 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-violet-100 transition-colors">
                   {link.icon}
                 </div>
                 <div>
-                  <div className="text-sm font-mono text-muted mb-0.5">{link.label}</div>
-                  <div className="text-lg text-text font-semibold group-hover:text-accent transition-colors">
+                  <div className="text-xs font-mono text-muted mb-0.5">{link.label}</div>
+                  <div className="text-sm text-text font-semibold group-hover:text-accent transition-colors">
                     {link.value}
                   </div>
                 </div>
-                <div className="ml-auto text-muted group-hover:text-accent transition-colors text-lg">→</div>
+                <div className="ml-auto text-muted group-hover:text-accent transition-colors text-sm">→</div>
               </a>
             ))}
 
-            <div className="card p-5 flex items-center gap-3">
+            <div className="card p-4 flex items-center gap-2.5">
               <span className="glow-dot" />
-              <span className="text-sm text-muted font-mono">
+              <span className="text-xs text-muted font-mono">
                 Available for full time roles and freelance projects
               </span>
             </div>
           </div>
 
-          <div className="card p-7">
+          <div className="card p-5">
             {sent ? (
               <div className="text-center py-8">
                 <div className="text-4xl mb-4">✉️</div>
@@ -111,9 +111,9 @@ export default function Contact() {
                 <p className="text-base text-muted">Feel free to send the message from there.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-mono text-muted mb-2">Your name</label>
+                  <label className="block text-xs font-mono text-muted mb-1.5">Your name</label>
                   <input
                     type="text"
                     name="name"
@@ -121,11 +121,11 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="John Doe"
-                    className="w-full bg-surface2 border border-border rounded-xl px-5 py-3.5 text-base text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
+                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-mono text-muted mb-2">Email address</label>
+                  <label className="block text-xs font-mono text-muted mb-1.5">Email address</label>
                   <input
                     type="email"
                     name="email"
@@ -133,19 +133,19 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="john@company.com"
-                    className="w-full bg-surface2 border border-border rounded-xl px-5 py-3.5 text-base text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
+                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-mono text-muted mb-2">Message</label>
+                  <label className="block text-xs font-mono text-muted mb-1.5">Message</label>
                   <textarea
                     name="message"
                     required
-                    rows={5}
+                    rows={4}
                     value={form.message}
                     onChange={handleChange}
                     placeholder="Tell me about the role or project..."
-                    className="w-full bg-surface2 border border-border rounded-xl px-5 py-3.5 text-base text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all resize-none"
+                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all resize-none"
                   />
                 </div>
                 <button type="submit" className="btn-primary w-full justify-center">

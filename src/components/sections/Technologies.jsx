@@ -42,14 +42,14 @@ export default function Technologies() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-2.5 mb-12">
+        <div className="flex flex-wrap gap-2 mb-8">
           {categories.map(cat => (
             <button
               key={cat.key}
               onClick={() => setActive(cat.key)}
               aria-label={`Filter by ${cat.label}`}
               aria-pressed={active === cat.key}
-              className={`font-mono text-sm px-5 py-2.5 rounded-xl border-2 transition-all duration-200 font-medium ${
+              className={`font-mono text-xs px-4 py-2 rounded-lg border-2 transition-all duration-200 font-medium ${
                 active === cat.key
                   ? 'text-white border-transparent shadow-md'
                   : 'bg-white text-muted border-border hover:border-accent/30 hover:text-text'
@@ -61,18 +61,18 @@ export default function Technologies() {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
           {filtered.map(tech => (
             <div
               key={tech.name}
-              className={`font-mono text-sm px-5 py-4 rounded-xl border text-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md cursor-default font-medium ${categoryColors[tech.category]}`}
+              className={`font-mono text-xs px-3 py-2.5 rounded-lg border text-center transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md cursor-default font-medium ${categoryColors[tech.category]}`}
             >
               {tech.name}
             </div>
           ))}
         </div>
 
-        <p className="text-sm text-muted font-mono mt-8">
+        <p className="text-xs text-muted font-mono mt-5">
           {filtered.length} {active === 'all' ? 'total' : categories.find(c => c.key === active)?.label.toLowerCase()} technologies
         </p>
       </div>

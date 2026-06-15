@@ -23,18 +23,18 @@ export default function ProjectCard({ project }) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="card-3d p-7 flex flex-col gap-5 group h-full"
+      className="card-3d p-5 flex flex-col gap-3.5 group h-full"
     >
       <div className="flex items-start justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
           {project.icon.startsWith('/') ? (
-            <img src={project.icon} alt={project.name} className="w-9 h-9 rounded-lg object-cover" />
+            <img src={project.icon} alt={project.name} className="w-7 h-7 rounded-md object-cover" />
           ) : (
-            <span className="text-3xl">{project.icon}</span>
+            <span className="text-xl">{project.icon}</span>
           )}
           <div>
             <span className="font-mono text-xs text-blue font-medium">{project.type}</span>
-            <h3 className="text-lg font-bold text-text group-hover:text-accent transition-colors leading-tight">
+            <h3 className="text-sm font-bold text-text group-hover:text-accent transition-colors leading-tight">
               {project.name}
             </h3>
           </div>
@@ -42,15 +42,15 @@ export default function ProjectCard({ project }) {
         <span className="font-mono text-xs text-muted whitespace-nowrap ml-2">{project.period}</span>
       </div>
 
-      <p className="text-base text-muted leading-relaxed flex-1 text-justify">{project.description}</p>
+      <p className="text-sm text-muted leading-relaxed flex-1 text-justify">{project.description}</p>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5">
         {project.stack.map(tech => (
           <span key={tech} className="tag">{tech}</span>
         ))}
       </div>
 
-      <div className="flex items-center gap-3 pt-3 border-t border-border">
+      <div className="flex items-center gap-3 pt-2.5 border-t border-border">
         {project.github && (
           <a
             href={project.github}
