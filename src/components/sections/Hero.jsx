@@ -121,13 +121,13 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
-          <a href="#projects" className="btn-primary">
+          <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="btn-primary">
             View Projects
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
-          </a>
-          <a href="#contact" className="btn-outline">Get in touch</a>
+          </button>
+          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn-outline">Get in touch</button>
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
             GitHub
           </a>

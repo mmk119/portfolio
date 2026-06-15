@@ -31,7 +31,7 @@ export default function HireMe() {
             I'm looking for full stack or backend roles where I can keep learning and ship things that matter. Happy to chat.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href="#contact" className="btn-primary">Let's connect</a>
+            <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn-primary">Let's connect</button>
             <a href="https://github.com/mmk119" target="_blank" rel="noopener noreferrer" className="btn-outline">
               See my work
             </a>
