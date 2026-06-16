@@ -22,11 +22,11 @@ export const experiences = [
     location: "Remote",
     current: true,
     bullets: [
-      "Every week brings a new full stack project with a React frontend, Node or Django backend, and a real database. It's intense but I've gotten fast.",
+      "Every week brings a new full stack project with a React frontend, Node backend, and a real database. It's intense but I've gotten fast.",
       "Built auth flows, REST APIs, and database schemas from scratch with no hand holding.",
       "Working in sprints with a team has made me comfortable with code reviews and shipping under tight deadlines.",
     ],
-    stack: ["React", "Next.js", "Node.js", "Flask", "Django", "MongoDB", "MySQL"],
+    stack: ["React", "Node.js", "MongoDB", "MySQL"],
   },
   {
     id: 2,
@@ -172,15 +172,11 @@ export const technologies = [
   { name: "Kotlin", category: "language" },
   { name: "C / C++", category: "language" },
   { name: "React", category: "frontend" },
-  { name: "Next.js", category: "frontend" },
   { name: "Astro", category: "frontend" },
   { name: "HTML5", category: "frontend" },
   { name: "CSS3", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
   { name: "Node.js", category: "backend" },
-  { name: "Express.js", category: "backend" },
-  { name: "Flask", category: "backend" },
-  { name: "Django", category: "backend" },
   { name: "REST APIs", category: "backend" },
   { name: "MongoDB", category: "database" },
   { name: "MySQL", category: "database" },
@@ -258,7 +254,7 @@ export const hireReasons = [
   {
     icon: "⚡",
     title: "I learn fast under pressure",
-    body: "Astro, Flask, and Django are all tools I picked up during active internships with real deadlines, not in sandbox tutorials. When I need a new tool, I figure it out and ship with it.",
+    body: "Astro is a tool I picked up during an active internship with real deadlines, not in a sandbox tutorial. When I need a new tool, I figure it out and ship with it.",
   },
   {
     icon: "🧠",
