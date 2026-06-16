@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Sacramento&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -178,5 +178,18 @@
   .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .mk-flourish-path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: drawFlourish 3s ease-in-out infinite;
+  }
+
+  @keyframes drawFlourish {
+    0% { stroke-dashoffset: 500; }
+    45% { stroke-dashoffset: 0; }
+    55% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 500; }
   }
 }

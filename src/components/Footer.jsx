@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-white">
-      <div className="w-full px-6 md:px-12 lg:px-16 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="w-full px-4 md:px-8 lg:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="font-mono text-sm text-text">
           <span className="text-accent font-semibold">{personalInfo.name}</span>
           {' '}&middot; {year}
