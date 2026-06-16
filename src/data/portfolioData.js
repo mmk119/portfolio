@@ -173,6 +173,7 @@ export const technologies = [
   { name: "C / C++", category: "language" },
   { name: "React", category: "frontend" },
   { name: "Astro", category: "frontend" },
+  { name: "Flutter", category: "frontend" },
   { name: "HTML5", category: "frontend" },
   { name: "CSS3", category: "frontend" },
   { name: "Tailwind CSS", category: "frontend" },
