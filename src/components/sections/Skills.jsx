@@ -37,7 +37,11 @@ function SkillCard({ cat }) {
     >
       <div className="flex items-center gap-3 mb-4">
         <div className={`w-9 h-9 rounded-lg border flex items-center justify-center text-lg ${colors.icon}`}>
-          {cat.icon}
+          {/\.(png|webp|svg|jpg|jfif)$/.test(cat.icon) ? (
+            <img src={cat.icon} alt="" className="w-5 h-5 object-contain" />
+          ) : (
+            cat.icon
+          )}
         </div>
         <h3 className={`font-bold text-sm ${colors.title}`}>{cat.label}</h3>
       </div>

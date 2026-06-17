@@ -112,7 +112,7 @@ export const projects = [
   },
   {
     id: 3,
-    icon: "🧠",
+    icon: import.meta.env.BASE_URL + "images/brain.jfif",
     name: "Brain Tumor Detection",
     period: "2025",
     type: "ML Pipeline",
@@ -197,7 +197,7 @@ export const technologies = [
 export const skillCategories = [
   {
     label: "Frontend",
-    icon: "⚡",
+    icon: import.meta.env.BASE_URL + "images/frontend.png",
     color: "accent",
     items: [
       "Build UIs in React with components, hooks, and the whole ecosystem",
@@ -208,7 +208,7 @@ export const skillCategories = [
   },
   {
     label: "Backend",
-    icon: "🔧",
+    icon: import.meta.env.BASE_URL + "images/backend.png",
     color: "green",
     items: [
       "Design and build REST APIs that are easy to work with",
@@ -219,7 +219,7 @@ export const skillCategories = [
   },
   {
     label: "Problem Solving",
-    icon: "🧩",
+    icon: import.meta.env.BASE_URL + "images/problem-solving.webp",
     color: "purple",
     items: [
       "Comfortable with algorithms and thinking about complexity",
@@ -230,7 +230,7 @@ export const skillCategories = [
   },
   {
     label: "Collaboration",
-    icon: "🤝",
+    icon: import.meta.env.BASE_URL + "images/collaboration.jpg",
     color: "orange",
     items: [
       "Worked in Agile sprints with real standups and retros",
@@ -279,12 +279,12 @@ export const certifications = [
 
 export const activities = [
   {
-    icon: "🇵🇸",
+    icon: import.meta.env.BASE_URL + "images/PCC.png",
     title: "Treasurer, AUB Palestinian Cultural Club",
     description: "Handled the money side of things, including budgeting for campus events, coordinating with other clubs, and making sure we didn't overspend.",
   },
   {
-    icon: "🏅",
+    icon: import.meta.env.BASE_URL + "images/HES.png",
     title: "HES University Scholarship Program Scholar",
     description: "Full tuition scholarship. Beyond academics, went through workshops on leadership, public speaking, and entrepreneurship.",
   },

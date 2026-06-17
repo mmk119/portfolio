@@ -71,7 +71,11 @@ export default function About() {
               <div className="space-y-3">
                 {activities.map((act, i) => (
                   <div key={i} className="flex items-start gap-2.5">
-                    <span className="text-base flex-shrink-0">{act.icon}</span>
+                    {/\.(png|webp|svg|jpg|jfif)$/.test(act.icon) ? (
+                      <img src={act.icon} alt="" className="w-5 h-5 flex-shrink-0 object-contain" />
+                    ) : (
+                      <span className="text-base flex-shrink-0">{act.icon}</span>
+                    )}
                     <div>
                       <div className="text-sm text-text font-semibold">{act.title}</div>
                       <div className="text-xs text-muted mt-0.5 leading-relaxed">{act.description}</div>

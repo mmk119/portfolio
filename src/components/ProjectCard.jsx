@@ -27,7 +27,7 @@ export default function ProjectCard({ project }) {
     >
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-2.5">
-          {project.icon.startsWith('/') ? (
+          {/\.(png|webp|svg|jpg|jfif)$/.test(project.icon) ? (
             <img src={project.icon} alt={project.name} className="w-7 h-7 rounded-md object-cover" />
           ) : (
             <span className="text-xl">{project.icon}</span>
