@@ -79,7 +79,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="card p-4 flex items-center gap-3 group hover:border-accent/40"
               >
-                <div className="w-10 h-10 rounded-lg bg-violet-50 border border-violet-200 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-violet-100 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center text-accent flex-shrink-0 group-hover:bg-accent/20 transition-colors">
                   {link.icon}
                 </div>
                 <div>
@@ -118,7 +118,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="John Doe"
-                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
+                    className="w-full bg-bg border border-border/30 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                   />
                 </div>
                 <div>
@@ -130,7 +130,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="john@company.com"
-                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all"
+                    className="w-full bg-bg border border-border/30 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                   />
                 </div>
                 <div>
@@ -142,7 +142,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={handleChange}
                     placeholder="Tell me about the role or project..."
-                    className="w-full bg-surface2 border border-border rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/10 transition-all resize-none"
+                    className="w-full bg-bg border border-border/30 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted/60 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all resize-none"
                   />
                 </div>
                 <button type="submit" className="btn-primary w-full justify-center">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { personalInfo } from '../../data/portfolioData';
+import Particles from '../Particles';
 
 const roles = ['Full Stack Engineer', 'Backend Developer', 'Problem Solver', 'CS Graduate'];
 
@@ -27,7 +28,9 @@ export default function Hero() {
   }, [displayed, deleting, roleIndex]);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white bg-grid pt-24">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-bg bg-grid pt-24">
+      <Particles />
+
       {/* Background shapes */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
@@ -35,7 +38,7 @@ export default function Hero() {
           style={{
             width: 500,
             height: 500,
-            background: 'radial-gradient(circle, rgba(109,40,217,0.08) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(96,165,250,0.10) 0%, transparent 70%)',
             top: '10%',
             right: '5%',
           }}
@@ -45,7 +48,7 @@ export default function Hero() {
           style={{
             width: 400,
             height: 400,
-            background: 'radial-gradient(circle, rgba(30,64,175,0.07) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%)',
             bottom: '10%',
             left: '5%',
             borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%',
@@ -59,7 +62,7 @@ export default function Hero() {
           style={{
             width: 70,
             height: 70,
-            border: '2px solid rgba(30,64,175,0.15)',
+            border: '2px solid rgba(96,165,250,0.15)',
             top: '22%',
             left: '10%',
             animation: 'float 6s ease-in-out infinite, spin 25s linear infinite',
@@ -72,16 +75,16 @@ export default function Hero() {
           style={{
             width: 100,
             height: 100,
-            border: '2px dashed rgba(109,40,217,0.12)',
+            border: '2px dashed rgba(96,165,250,0.12)',
             borderRadius: '50%',
             bottom: '28%',
             right: '18%',
             animation: 'spin 30s linear infinite',
           }}
         />
-        <div className="absolute w-3 h-3 rounded-full bg-accent/20 top-[30%] left-[20%] animate-float" />
-        <div className="absolute w-2 h-2 rounded-full bg-blue/20 top-[50%] right-[25%] animate-float-slow" />
-        <div className="absolute w-3 h-3 rounded-full bg-green/15 bottom-[35%] left-[35%] animate-float-reverse" />
+        <div className="absolute w-3 h-3 rounded-full bg-accent/25 top-[30%] left-[20%] animate-float" />
+        <div className="absolute w-2 h-2 rounded-full bg-blue/25 top-[50%] right-[25%] animate-float-slow" />
+        <div className="absolute w-3 h-3 rounded-full bg-green/20 bottom-[35%] left-[35%] animate-float-reverse" />
       </div>
 
       <div className="relative z-10 w-full max-w-4xl mx-auto px-5 md:px-10 text-center">
@@ -90,12 +93,12 @@ export default function Hero() {
           <img
             src={import.meta.env.BASE_URL + "myphoto.jpeg"}
             alt="Mohammad Kassem"
-            className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover mx-auto border-3 border-white shadow-lg ring-2 ring-accent/20"
+            className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover mx-auto border-3 border-surface shadow-lg ring-2 ring-accent/30"
           />
         </div>
 
         {/* Status badge */}
-        <div className="inline-flex items-center gap-2 bg-white border border-border rounded-full px-4 py-2 mb-6 text-sm font-mono text-muted shadow-sm">
+        <div className="inline-flex items-center gap-2 bg-surface border border-border/30 rounded-full px-4 py-2 mb-6 text-sm font-mono text-muted shadow-sm">
           <span className="glow-dot" />
           {personalInfo.availableForWork ? 'Open to opportunities' : 'Currently working'}
         </div>
@@ -146,7 +149,7 @@ export default function Hero() {
             { num: '2', label: 'Active Roles' },
             { num: 'AUB', label: 'Scholar' },
           ].map(stat => (
-            <div key={stat.label} className="text-center bg-white border border-border rounded-xl p-3 sm:p-4 shadow-sm">
+            <div key={stat.label} className="text-center bg-surface border border-border/30 rounded-xl p-3 sm:p-4 shadow-sm">
               <div className="font-mono text-xl sm:text-2xl font-bold text-gradient">{stat.num}</div>
               <div className="text-xs text-muted uppercase tracking-widest mt-1">{stat.label}</div>
             </div>

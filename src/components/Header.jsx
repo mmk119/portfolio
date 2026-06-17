@@ -57,7 +57,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a80] backdrop-blur-[15px] border-b border-border/30 shadow-sm">
       <div className="w-full px-4 md:px-8 lg:px-12 h-16 md:h-20 flex items-center justify-between">
         <div className="inline-block text-center leading-none group cursor-default select-none">
           <span
@@ -77,8 +77,8 @@ export default function Header() {
             />
             <defs>
               <linearGradient id="flourish-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#6d28d9" />
-                <stop offset="100%" stopColor="#1e40af" />
+                <stop offset="0%" stopColor="#60a5fa" />
+                <stop offset="100%" stopColor="#818cf8" />
               </linearGradient>
             </defs>
           </svg>
@@ -121,7 +121,7 @@ export default function Header() {
           menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <nav className="bg-white border-b border-border px-6 py-4 flex flex-col gap-1">
+        <nav className="bg-surface border-b border-border/30 px-6 py-4 flex flex-col gap-1">
           {navLinks.map(link => (
             <button
               key={link.href}

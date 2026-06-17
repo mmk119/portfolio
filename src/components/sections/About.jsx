@@ -5,7 +5,7 @@ export default function About() {
   const ref = useScrollReveal();
 
   return (
-    <section id="about" className="bg-white">
+    <section id="about" className="bg-bg">
       <div className="section-container">
         <div ref={ref} className="fade-up">
           <p className="section-label">About Me</p>

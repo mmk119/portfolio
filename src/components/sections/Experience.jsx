@@ -16,14 +16,14 @@ export default function Experience() {
         </div>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 hidden md:block" style={{ background: 'linear-gradient(to bottom, #6d28d9, #1e40af, transparent)' }} />
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 hidden md:block" style={{ background: 'linear-gradient(to bottom, #3b82f6, #6366f1, transparent)' }} />
 
           <div className="space-y-6">
             {experiences.map((exp) => (
               <div key={exp.id} className="relative md:pl-12">
                 <div className="absolute left-0 top-5 hidden md:flex items-center justify-center w-7 h-7">
                   <div
-                    className={`w-3 h-3 rounded-full border-2 border-white ${
+                    className={`w-3 h-3 rounded-full border-2 border-surface ${
                       exp.current ? 'bg-green' : 'bg-border'
                     }`}
                     style={exp.current ? { boxShadow: '0 0 8px rgba(5,150,105,0.4)' } : {}}
@@ -36,7 +36,7 @@ export default function Experience() {
                       <div className="flex items-center gap-2 flex-wrap">
                         <h3 className="text-base font-bold text-text">{exp.role}</h3>
                         {exp.current && (
-                          <span className="inline-flex items-center gap-1 text-xs font-mono text-green bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
+                          <span className="inline-flex items-center gap-1 text-xs font-mono text-green bg-green/10 border border-green/20 px-2 py-0.5 rounded-full">
                             <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse" />
                             Now
                           </span>

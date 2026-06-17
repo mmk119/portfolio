@@ -14,13 +14,13 @@ const categories = [
 ];
 
 const categoryColors = {
-  language: 'text-accent bg-violet-50 border-violet-200',
-  frontend: 'text-blue bg-blue-50 border-blue-200',
-  backend: 'text-green bg-emerald-50 border-emerald-200',
-  database: 'text-orange-600 bg-orange-50 border-orange-200',
-  tools: 'text-slate-600 bg-slate-50 border-slate-200',
-  ai: 'text-purple-600 bg-purple-50 border-purple-200',
-  practices: 'text-amber-600 bg-amber-50 border-amber-200',
+  language: 'text-accent bg-accent/10 border-accent/20',
+  frontend: 'text-blue bg-blue/10 border-blue/20',
+  backend: 'text-green bg-green/10 border-green/20',
+  database: 'text-orange-300 bg-orange-300/10 border-orange-300/20',
+  tools: 'text-sky-300 bg-sky-300/10 border-sky-300/20',
+  ai: 'text-violet-300 bg-violet-300/10 border-violet-300/20',
+  practices: 'text-amber-300 bg-amber-300/10 border-amber-300/20',
 };
 
 export default function Technologies() {
@@ -32,7 +32,7 @@ export default function Technologies() {
     : technologies.filter(t => t.category === active);
 
   return (
-    <section id="technologies" className="bg-white">
+    <section id="technologies" className="bg-bg">
       <div className="section-container">
         <div ref={ref} className="fade-up">
           <p className="section-label">Technologies</p>
@@ -52,9 +52,9 @@ export default function Technologies() {
               className={`font-mono text-xs px-4 py-2 rounded-lg border-2 transition-all duration-200 font-medium ${
                 active === cat.key
                   ? 'text-white border-transparent shadow-md'
-                  : 'bg-white text-muted border-border hover:border-accent/30 hover:text-text'
+                  : 'bg-surface text-muted border-border/30 hover:border-accent/30 hover:text-text'
               }`}
-              style={active === cat.key ? { background: 'linear-gradient(135deg, #6d28d9, #1e40af)' } : {}}
+              style={active === cat.key ? { background: 'linear-gradient(135deg, #3b82f6, #6366f1)' } : {}}
             >
               {cat.label}
             </button>

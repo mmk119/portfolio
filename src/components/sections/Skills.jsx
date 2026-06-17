@@ -3,10 +3,10 @@ import { useScrollReveal } from '../../hooks/useScrollReveal';
 import { skillCategories } from '../../data/portfolioData';
 
 const colorMap = {
-  accent: { icon: 'bg-violet-50 border-violet-200', title: 'text-accent', check: 'text-accent' },
-  green: { icon: 'bg-emerald-50 border-emerald-200', title: 'text-green', check: 'text-green' },
-  purple: { icon: 'bg-purple-50 border-purple-200', title: 'text-purple-600', check: 'text-purple-600' },
-  orange: { icon: 'bg-orange-50 border-orange-200', title: 'text-orange-600', check: 'text-orange-600' },
+  accent: { icon: 'bg-accent/10 border-accent/20', title: 'text-accent', check: 'text-accent' },
+  green: { icon: 'bg-green/10 border-green/20', title: 'text-green', check: 'text-green' },
+  purple: { icon: 'bg-purple-400/10 border-purple-400/20', title: 'text-purple-400', check: 'text-purple-400' },
+  orange: { icon: 'bg-orange-400/10 border-orange-400/20', title: 'text-orange-400', check: 'text-orange-400' },
 };
 
 function SkillCard({ cat }) {

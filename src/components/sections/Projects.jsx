@@ -12,7 +12,7 @@ export default function Projects() {
   const visible = showAll ? projects : featured;
 
   return (
-    <section id="projects" className="bg-white">
+    <section id="projects" className="bg-bg">
       <div className="section-container">
         <div ref={ref} className="fade-up">
           <p className="section-label">Projects</p>

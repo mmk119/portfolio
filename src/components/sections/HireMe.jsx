@@ -5,7 +5,7 @@ export default function HireMe() {
   const ref = useScrollReveal();
 
   return (
-    <section id="hire" className="bg-white">
+    <section id="hire" className="bg-bg">
       <div className="section-container">
         <div ref={ref} className="fade-up">
           <p className="section-label">Why Hire Me</p>
@@ -26,8 +26,8 @@ export default function HireMe() {
         </div>
 
         <div className="gradient-border rounded-xl p-6 md:p-8 text-center">
-          <h3 className="text-xl md:text-2xl font-bold text-text mb-3">Think we'd work well together?</h3>
-          <p className="text-sm text-muted mb-5 max-w-lg mx-auto text-justify">
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-3">Think we'd work well together?</h3>
+          <p className="text-sm text-white/70 mb-5 max-w-lg mx-auto text-justify">
             I'm looking for full stack or backend roles where I can keep learning and ship things that matter. Happy to chat.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
