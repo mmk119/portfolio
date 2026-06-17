@@ -126,17 +126,14 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
           <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="btn-primary">
             View Projects
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
           </button>
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn-outline">Get in touch</button>
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
             GitHub
           </a>
-          <a href="https://drive.google.com/file/d/1G6D_pHPf9hSqnJo8ihxZHrHuzNwXArAz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline">
+          <a href="https://drive.google.com/file/d/1G6D_pHPf9hSqnJo8ihxZHrHuzNwXArAz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline group">
             Resume
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <path d="M12 5v14M5 12l7 7 7-7"/>
             </svg>
           </a>

@@ -272,7 +272,7 @@ export const hireReasons = [
 export const certifications = [
   { name: "Java Programming", issuer: "American University of Beirut" },
   { name: "Offensive Cybersecurity Bootcamp", issuer: "Semi-colon and Google Developer Group" },
-  { name: "SEO Certification", issuer: "USAID" },
+  { name: "SEO Certification", issuer: "" },
   { name: "Web Development", issuer: "FEKRA Organization" },
   { name: "Presentation and Training Skills (TOT)", issuer: "EdTech Syndicate, Lebanon" },
 ];
