@@ -41,14 +41,6 @@ export default function Contact() {
       ),
     },
     {
-      label: 'Instagram',
-      value: 'mohamad_kassem55',
-      href: personalInfo.instagram,
-      icon: (
-        <img src={import.meta.env.BASE_URL + "instalogo.png"} alt="Instagram" width="20" height="20" />
-      ),
-    },
-    {
       label: 'Email',
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,

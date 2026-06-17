@@ -40,10 +40,6 @@ export default function About() {
               <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm py-2.5 px-5">
                 LinkedIn
               </a>
-              <a href={personalInfo.instagram} target="_blank" rel="noopener noreferrer" className="btn-outline text-sm py-2.5 px-5 flex items-center gap-2">
-                <img src={import.meta.env.BASE_URL + "instalogo.png"} alt="Instagram" className="w-5 h-5" />
-                Instagram
-              </a>
               <a href={`mailto:${personalInfo.email}`} className="btn-primary text-sm py-2.5 px-5">
                 Email me
               </a>
