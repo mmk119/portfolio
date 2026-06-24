@@ -15,12 +15,26 @@ export const personalInfo = {
 
 export const experiences = [
   {
+    id: 6,
+    role: "Tech Generalist Intern",
+    company: "SiiRA World",
+    period: "Jun 2026 - Aug 2026",
+    location: "Remote",
+    current: true,
+    bullets: [
+      "Supporting the Head of Product across product planning, technical requirements, and feature delivery.",
+      "Bridging engineering and product teams by translating technical constraints into actionable product decisions.",
+      "Contributing to roadmap prioritization, user story writing, and product documentation.",
+    ],
+    stack: ["PHP", "Laravel", "Data Enrichment", "ML Algorithms"],
+  },
+  {
     id: 1,
     role: "Full Stack Engineer Trainee",
     company: "The Digital Hub (UNRWA)",
-    period: "May 2026 - Present",
+    period: "May - Jun 2026",
     location: "Remote",
-    current: true,
+    current: false,
     bullets: [
       "Every week brings a new full stack project with a React frontend, Node backend, and a real database. It's intense but I've gotten fast.",
       "Built auth flows, REST APIs, and database schemas from scratch with no hand holding.",
@@ -32,9 +46,9 @@ export const experiences = [
     id: 2,
     role: "Backend Engineering Intern",
     company: "Tawasoul",
-    period: "Apr 2026 - Present",
+    period: "Apr - Jun 2026",
     location: "Remote",
-    current: true,
+    current: false,
     bullets: [
       "Writing and testing API endpoints in TypeScript on a production codebase used by real users.",
       "Took messy legacy code and broke it into clean, typed modules the team could actually work with.",
@@ -67,19 +81,6 @@ export const experiences = [
       "Got good at explaining technical concepts to people who don't think in code.",
     ],
     stack: ["Excel", "Data Analysis"],
-  },
-  {
-    id: 5,
-    role: "Peer Tutor",
-    company: "Beit Atfal Assomoud",
-    period: "Jun - Aug 2024",
-    location: "Sour",
-    current: false,
-    bullets: [
-      "Tutored kids aged 8 to 16 in school subjects, which meant getting creative to keep them engaged.",
-      "Ran workshops on bullying and healthy habits. Teaching soft skills turned out to be harder than teaching math.",
-    ],
-    stack: [],
   },
 ];
 
