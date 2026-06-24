@@ -1,10 +1,10 @@
 export const personalInfo = {
   name: "Mohammad Kassem",
   initials: "MK",
-  role: "Full Stack Engineer",
+  role: "Software Engineer",
   tagline: "I build things for the web, end to end.",
   summary:
-    "I'm a recent CS grad from AUB, currently balancing two internships. I've built a full-stack volunteer platform with role-based auth and moderation, an ML model that segments brain tumors, and a mood-journaling app you talk to instead of type into. I care most about writing code that still makes sense later.",
+    "I'm a recent CS grad from AUB, currently interning at SiiRA World where I bridge engineering and product. I've built a full-stack volunteer platform with role-based auth and moderation, an ML model that segments brain tumors, and a mood-journaling app you talk to instead of type into. I care most about writing code that still makes sense later.",
   location: "Lebanon",
   email: "mohammad15kassem@gmail.com",
   github: "https://github.com/mmk119",
@@ -36,9 +36,9 @@ export const experiences = [
     location: "Remote",
     current: false,
     bullets: [
-      "Every week brings a new full stack project with a React frontend, Node backend, and a real database. It's intense but I've gotten fast.",
+      "Every week brought a new full stack project with a React frontend, Node backend, and a real database. It was intense but I got fast.",
       "Built auth flows, REST APIs, and database schemas from scratch with no hand holding.",
-      "Working in sprints with a team has made me comfortable with code reviews and shipping under tight deadlines.",
+      "Worked in sprints with a team, which made me comfortable with code reviews and shipping under tight deadlines.",
     ],
     stack: ["React", "Node.js", "MongoDB", "MySQL"],
   },
@@ -50,7 +50,7 @@ export const experiences = [
     location: "Remote",
     current: false,
     bullets: [
-      "Writing and testing API endpoints in TypeScript on a production codebase used by real users.",
+      "Wrote and tested API endpoints in TypeScript on a production codebase used by real users.",
       "Took messy legacy code and broke it into clean, typed modules the team could actually work with.",
       "Picked up Astro on the fly to help with performance and SEO, including islands architecture, static generation, and more.",
     ],
@@ -180,6 +180,8 @@ export const technologies = [
   { name: "Tailwind CSS", category: "frontend" },
   { name: "Node.js", category: "backend" },
   { name: "REST APIs", category: "backend" },
+  { name: "PHP", category: "backend" },
+  { name: "Laravel", category: "backend" },
   { name: "MongoDB", category: "database" },
   { name: "MySQL", category: "database" },
   { name: "Mongoose", category: "database" },
@@ -246,7 +248,7 @@ export const hireReasons = [
   {
     icon: "🏗️",
     title: "I own the whole feature",
-    body: "Give me a feature and I'll handle it from database to API to frontend to deployment. I'm doing this at two internships right now, so context switching between layers is just how I work.",
+    body: "Give me a feature and I'll handle it from database to API to frontend to deployment. I've done this across multiple internships, so context switching between layers is just how I work.",
   },
   {
     icon: "📐",

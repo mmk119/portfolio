@@ -17,9 +17,11 @@ export default function About() {
             <p>
               I studied CS at{' '}
               <span className="text-accent font-semibold">AUB</span> on a full scholarship and graduated this year.
-              Right now I'm interning at two places at once:{' '}
+              Right now I'm interning at{' '}
+              <span className="text-text font-semibold">SiiRA World</span>, bridging engineering and product.
+              Before that I interned at{' '}
               <span className="text-text font-semibold">Tawasoul</span> (backend) and{' '}
-              <span className="text-text font-semibold">The Digital Hub</span> (full-stack). It's a lot, but it's the fastest way I know to get better.
+              <span className="text-text font-semibold">The Digital Hub</span> (full-stack).
             </p>
             <p>
               I got into programming because I wanted to know how things work, not just use apps, but truly understand what's happening underneath.
