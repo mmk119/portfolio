@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { personalInfo } from '../../data/portfolioData';
 import Particles from '../Particles';
 
-const roles = ['Software Engineer', 'Full Stack Developer', 'Problem Solver', 'CS Graduate'];
+const roles = ['Backend Engineer', 'Full Stack Developer', 'API Security Minded', 'CS Graduate'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -20,8 +20,10 @@ export default function Hero() {
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 40);
     } else if (deleting && displayed.length === 0) {
-      setDeleting(false);
-      setRoleIndex(i => (i + 1) % roles.length);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setRoleIndex(i => (i + 1) % roles.length);
+      }, 400);
     }
 
     return () => clearTimeout(timeout);
@@ -131,7 +133,7 @@ export default function Hero() {
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
             GitHub
           </a>
-          <a href="https://drive.google.com/file/d/1G6D_pHPf9hSqnJo8ihxZHrHuzNwXArAz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline group">
+          <a href="https://drive.google.com/file/d/1ZO_MTViH0fLwurxpdhjlXapi5ALhF5p-/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline group">
             Resume
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <path d="M12 5v14M5 12l7 7 7-7"/>
@@ -143,7 +145,7 @@ export default function Hero() {
         <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-md mx-auto">
           {[
             { num: '6+', label: 'Projects' },
-            { num: '3', label: 'Past Roles' },
+            { num: '5', label: 'Past Roles' },
             { num: 'AUB', label: 'Scholar' },
           ].map(stat => (
             <div key={stat.label} className="text-center bg-surface border border-border/30 rounded-xl p-3 sm:p-4 shadow-sm">

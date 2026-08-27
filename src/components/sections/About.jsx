@@ -17,16 +17,16 @@ export default function About() {
             <p>
               I studied CS at{' '}
               <span className="text-accent font-semibold">AUB</span> on a full scholarship and graduated this year.
-              Right now I'm interning at{' '}
-              <span className="text-text font-semibold">SiiRA World</span>, bridging engineering and product.
-              Before that I interned at{' '}
-              <span className="text-text font-semibold">Tawasoul</span> (backend) and{' '}
+              This summer I was a Technology Generalist Intern at{' '}
+              <span className="text-text font-semibold">SiiRA Inc.</span>, building AI agents and internal automation tooling in the Product/R&amp;D unit.
+              Before that I was at{' '}
+              <span className="text-text font-semibold">Tawasoul</span> (backend and security) and{' '}
               <span className="text-text font-semibold">The Digital Hub</span> (full-stack).
             </p>
             <p>
               I got into programming because I wanted to know how things work, not just use apps, but truly understand what's happening underneath.
-              That curiosity took me from writing C in a terminal to building web APIs, training ML models, and making Android apps.
-              I like being the person who can touch every layer of a project.
+              These days that curiosity mostly points at the backend, at how an API is put together and where its auth quietly falls apart.
+              At Tawasoul I audited their whole Supabase setup, wrote up what I found, and then built the hardened auth flows myself.
             </p>
             <p>
               Outside of code, I helped create{' '}

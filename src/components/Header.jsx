@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { personalInfo } from '../data/portfolioData';
 
 const navLinks = [
   { label: 'About', href: '#about' },
