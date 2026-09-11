@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { personalInfo } from '../../data/portfolioData';
 import Particles from '../Particles';
 
-const roles = ['Backend Engineer', 'Full Stack Developer', 'API Security Minded', 'CS Graduate'];
+const roles = ['Software Engineer', 'Backend Developer', 'Full Stack Developer', 'AI/ML Curious'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -133,7 +133,7 @@ export default function Hero() {
           <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
             GitHub
           </a>
-          <a href="https://drive.google.com/file/d/1ZO_MTViH0fLwurxpdhjlXapi5ALhF5p-/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline group">
+          <a href={personalInfo.resume} target="_blank" rel="noopener noreferrer" className="btn-outline group">
             Resume
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <path d="M12 5v14M5 12l7 7 7-7"/>
@@ -144,7 +144,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-md mx-auto">
           {[
-            { num: '6+', label: 'Projects' },
+            { num: '7', label: 'Projects' },
             { num: '5', label: 'Past Roles' },
             { num: 'AUB', label: 'Scholar' },
           ].map(stat => (
