@@ -9,7 +9,7 @@ export const personalInfo = {
   email: "mohammad15kassem@gmail.com",
   phone: "+961 76 704 944",
   github: "https://github.com/mmk119",
-  linkedin: "https://www.linkedin.com/in/mohammad-kassem-74a2241a5",
+  linkedin: "https://www.linkedin.com/in/mohammad---kassem/",
   instagram: "https://www.instagram.com/mohamad_kassem55/",
   resume: "https://drive.google.com/file/d/1jj_F3faEVs94RW-7l1mulP6mcdTs06uH/view?usp=sharing",
   availableForWork: true,
