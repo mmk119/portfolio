@@ -4,7 +4,7 @@ export const personalInfo = {
   role: "Backend Software Engineer",
   tagline: "I build the APIs the product runs on, and I make them hold up.",
   summary:
-    "I'm a backend engineer and a CS graduate of AUB. I build REST APIs in Node.js, Express, TypeScript, and Laravel, secured with JWT and role-based access control. Recently that's meant a security review of a live platform serving 500+ users and the rebuild that followed, the backend for an AI copilot spanning 250k+ candidate profiles, and an n8n workflow that cut two to three hours of manual triage a week.",
+    "I'm a backend engineer and a CS graduate of AUB. I build REST APIs in Node.js, Express, TypeScript, and lately PHP and Laravel, secured with JWT and role-based access control, and I work in Python for data and ML. Recently that's meant an internal AI tools hub used by 20+ employees, an n8n workflow that cut two to three hours of triage a week, and a security review of a live platform serving 500+ users.",
   location: "Lebanon",
   email: "mohammad15kassem@gmail.com",
   phone: "+961 76 704 944",
@@ -290,18 +290,7 @@ export const skillCategories = [
     ],
   },
   {
-    label: "Testing & Delivery",
-    icon: "🧪",
-    color: "orange",
-    items: [
-      "Cover what I build: 192 tests on my last project, five driving the real ffmpeg binary",
-      "Put external services behind interfaces so swapping one is a binding change, not a rewrite",
-      "Think hard about retries and failure modes, like treating a 429 as a wait and a 5xx as a failure",
-      "Queues and background jobs so a slow pipeline never blocks the request",
-    ],
-  },
-  {
-    label: "AI & Automation",
+    label: "AI & ML",
     icon: import.meta.env.BASE_URL + "images/brain.jfif",
     color: "accent",
     items: [
@@ -309,6 +298,28 @@ export const skillCategories = [
       "Shipped LLM agents and an internal AI tools hub that 20+ people use",
       "Automated manual email triage with n8n, saving two to three hours a week",
       "Wired Whisper and GPT-4o into real pipelines, and trained models from scratch before that",
+    ],
+  },
+  {
+    label: "Frontend",
+    icon: import.meta.env.BASE_URL + "images/frontend.png",
+    color: "orange",
+    items: [
+      "Build UIs in React with components, hooks, and the whole ecosystem",
+      "Make things look good on every screen size, usually with Tailwind",
+      "Know when to reach for state management and when to keep it simple",
+      "Wire real product flows like multi-step booking, live availability, and analytics dashboards",
+    ],
+  },
+  {
+    label: "Testing & Reliability",
+    icon: import.meta.env.BASE_URL + "images/collaboration.jpg",
+    color: "blue",
+    items: [
+      "Covered my last project with 192 tests, five of them driving the real ffmpeg binary rather than a fake",
+      "Write retry policies that tell rate limiting apart from actual failure",
+      "Validate output that is structurally correct but semantically wrong",
+      "Report per stage status and readable errors so a failure says what broke",
     ],
   },
 ];

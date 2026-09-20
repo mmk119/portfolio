@@ -7,6 +7,7 @@ const colorMap = {
   green: { icon: 'bg-green/10 border-green/20', title: 'text-green', check: 'text-green' },
   purple: { icon: 'bg-purple-400/10 border-purple-400/20', title: 'text-purple-400', check: 'text-purple-400' },
   orange: { icon: 'bg-orange-400/10 border-orange-400/20', title: 'text-orange-400', check: 'text-orange-400' },
+  blue: { icon: 'bg-blue/10 border-blue/20', title: 'text-blue', check: 'text-blue' },
 };
 
 function SkillCard({ cat }) {
