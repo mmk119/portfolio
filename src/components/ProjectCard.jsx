@@ -1,7 +1,20 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function ProjectCard({ project }) {
   const cardRef = useRef(null);
+  const descRef = useRef(null);
+  const [expanded, setExpanded] = useState(false);
+  const [clamped, setClamped] = useState(false);
+
+  useEffect(() => {
+    const el = descRef.current;
+    if (!el || expanded) return;
+    const check = () => setClamped(el.scrollHeight > el.clientHeight + 1);
+    check();
+    const observer = new ResizeObserver(check);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [expanded]);
 
   const handleMouseMove = (e) => {
     const card = cardRef.current;
@@ -42,7 +55,22 @@ export default function ProjectCard({ project }) {
         <span className="font-mono text-xs text-muted whitespace-nowrap ml-2">{project.period}</span>
       </div>
 
-      <p className="text-sm text-muted leading-relaxed flex-1 text-justify">{project.description}</p>
+      <div className="flex-1">
+        <p
+          ref={descRef}
+          className={`text-sm text-muted leading-relaxed text-justify ${expanded ? '' : 'line-clamp-6'}`}
+        >
+          {project.description}
+        </p>
+        {clamped && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className="mt-1.5 text-xs font-mono text-accent hover:text-accent-light transition-colors bg-transparent border-none p-0 cursor-pointer"
+          >
+            {expanded ? 'Show less' : 'Read more'}
+          </button>
+        )}
+      </div>
 
       <div className="flex flex-wrap gap-1.5">
         {project.stack.map(tech => (

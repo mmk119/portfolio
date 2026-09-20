@@ -1,14 +1,8 @@
-import { useState } from 'react';
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import { personalInfo, activities, certifications, education } from '../../data/portfolioData';
-
-const CERTS_SHOWN = 5;
+import { personalInfo, activities, education } from '../../data/portfolioData';
 
 export default function About() {
   const ref = useScrollReveal();
-  const [showAllCerts, setShowAllCerts] = useState(false);
-  const visibleCerts = showAllCerts ? certifications : certifications.slice(0, CERTS_SHOWN);
-  const hiddenCerts = certifications.length - CERTS_SHOWN;
 
   return (
     <section id="about" className="bg-bg">
@@ -66,42 +60,6 @@ export default function About() {
                 </div>
                 <span className="font-mono text-xs text-muted whitespace-nowrap flex-shrink-0">{education.period}</span>
               </div>
-            </div>
-
-            <div className="card p-5">
-              <h3 className="text-xs font-mono text-blue uppercase tracking-widest mb-3 font-semibold">Certifications</h3>
-              <div className="space-y-2.5">
-                {visibleCerts.map((cert, i) => (
-                  <div key={i} className="flex items-start gap-2.5">
-                    <span className="text-green mt-0.5 text-xs font-bold">✓</span>
-                    <div>
-                      {cert.url ? (
-                        <a
-                          href={cert.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-text font-medium hover:text-accent transition-colors"
-                        >
-                          {cert.name}
-                        </a>
-                      ) : (
-                        <div className="text-sm text-text font-medium">{cert.name}</div>
-                      )}
-                      <div className="text-xs text-muted">
-                        {cert.issuer}{cert.year ? ` · ${cert.year}` : ''}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              {hiddenCerts > 0 && (
-                <button
-                  onClick={() => setShowAllCerts(!showAllCerts)}
-                  className="mt-3 pt-3 border-t border-border/40 w-full text-left text-xs font-mono text-muted hover:text-accent transition-colors bg-transparent border-x-0 border-b-0 cursor-pointer"
-                >
-                  {showAllCerts ? 'Show fewer' : `Show ${hiddenCerts} more`}
-                </button>
-              )}
             </div>
 
             <div className="card p-5">
