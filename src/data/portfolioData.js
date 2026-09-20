@@ -343,12 +343,84 @@ export const hireReasons = [
 ];
 
 export const certifications = [
-  { name: "DevOps Foundations: Continuous Delivery / Continuous Integration", issuer: "LinkedIn Learning, 2026" },
-  { name: "Java Programming", issuer: "American University of Beirut" },
-  { name: "Offensive Cybersecurity Bootcamp", issuer: "Semi-colon and Google Developer Group" },
-  { name: "Web Development", issuer: "FEKRA Organization" },
-  { name: "SEO Certification", issuer: "" },
-  { name: "Presentation and Training Skills (TOT)", issuer: "EdTech Syndicate, Lebanon" },
+  {
+    name: "Model Context Protocol: Advanced Topics",
+    issuer: "Claude Academy",
+    year: "2026",
+    url: "https://academy.claude.com/verify/c3509e6cc8e74329b1677ecda2e28dee",
+  },
+  {
+    name: "AI Fluency for Builders",
+    issuer: "Claude Academy",
+    year: "2026",
+    url: "https://academy.claude.com/verify/b0f7a6cf2a557f3971a77fe422ecee7d",
+  },
+  {
+    name: "DevOps Foundations: Continuous Delivery/Continuous Integration",
+    issuer: "LinkedIn Learning",
+    year: "2026",
+    url: "https://www.linkedin.com/learning/certificates/11186cd40a9d3ea0b8abdbe8895a182bd51471df23ff3d4b932885450c53555d",
+  },
+  {
+    name: "Artificial Intelligence Foundations: Getting Started with Intelligent Systems",
+    issuer: "LinkedIn Learning",
+    year: "2026",
+    url: "https://www.linkedin.com/learning/certificates/3eac2a6be5996f751ecf3f92defb8c05a7e688be6a8ac662222aea02f4f63381",
+  },
+  {
+    name: "React Essential Training",
+    issuer: "LinkedIn Learning",
+    year: "2026",
+    url: "https://www.linkedin.com/learning/certificates/1de7e390579c50ef583929220c62e6602cddbc15c3711216d76cc5d7d95c43e1",
+  },
+  {
+    name: "Professional Scrum Product Owner I (PSPO I) Cert Prep",
+    issuer: "LinkedIn Learning",
+    year: "2026",
+    url: "https://www.linkedin.com/learning/certificates/517f96234b15fe6aaa1ed69c99bfa4850bb160d2f5884ff765fb9faaa1152e05",
+  },
+  {
+    name: "Python for Data Science",
+    issuer: "ZAKA",
+    year: "2026",
+    url: "https://academy.zaka.ai/certificates/flfoqw3zca",
+  },
+  {
+    name: "Artificial Intelligence For Everyone",
+    issuer: "ZAKA",
+    year: "2026",
+    url: "https://academy.zaka.ai/certificates/lznkp8rgsn",
+  },
+  {
+    name: "Offensive Cybersecurity Bootcamp",
+    issuer: "Semicolon and Google Developer Group",
+    year: null,
+    url: null,
+  },
+  {
+    name: "Java Programming",
+    issuer: "American University of Beirut",
+    year: null,
+    url: null,
+  },
+  {
+    name: "Web Development",
+    issuer: "FEKRA Organization",
+    year: null,
+    url: null,
+  },
+  {
+    name: "Presentation and Training Skills (TOT)",
+    issuer: "EdTech Syndicate, Lebanon",
+    year: null,
+    url: null,
+  },
+  {
+    name: "SEO Certification",
+    issuer: "USAID",
+    year: null,
+    url: null,
+  },
 ];
 
 export const activities = [
