@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { personalInfo } from '../../data/portfolioData';
 import Particles from '../Particles';
 
-const roles = ['Software Engineer', 'Backend Developer', 'Full Stack Developer', 'AI/ML Curious'];
+const roles = ['Backend Software Engineer', 'REST API Developer', 'Security Minded', 'CS Graduate'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -144,7 +144,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-md mx-auto">
           {[
-            { num: '7', label: 'Projects' },
+            { num: '8', label: 'Projects' },
             { num: '5', label: 'Past Roles' },
             { num: 'AUB', label: 'Scholar' },
           ].map(stat => (

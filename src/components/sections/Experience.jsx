@@ -43,6 +43,9 @@ export default function Experience() {
                         )}
                       </div>
                       <div className="text-sm text-accent font-semibold mt-0.5">{exp.company}</div>
+                      {exp.blurb && (
+                        <div className="text-xs text-muted italic mt-1 max-w-xl">{exp.blurb}</div>
+                      )}
                     </div>
                     <div className="flex flex-col items-start sm:items-end gap-0.5 flex-shrink-0">
                       <span className="font-mono text-xs text-muted bg-surface2 border border-border px-2.5 py-0.5 rounded-md">

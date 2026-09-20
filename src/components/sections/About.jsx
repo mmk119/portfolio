@@ -1,5 +1,5 @@
 import { useScrollReveal } from '../../hooks/useScrollReveal';
-import { personalInfo, activities, certifications } from '../../data/portfolioData';
+import { personalInfo, activities, certifications, education } from '../../data/portfolioData';
 
 export default function About() {
   const ref = useScrollReveal();
@@ -17,17 +17,17 @@ export default function About() {
             <p>
               I studied CS at{' '}
               <span className="text-accent font-semibold">AUB</span> on a full scholarship and graduated this year.
-              This summer I was a Software Engineer Intern in Product/R&amp;D at{' '}
+              This summer I was a Software Engineer Intern in Product and R&amp;D at{' '}
               <span className="text-text font-semibold">SiiRA Inc.</span>, where I shipped three projects in eight weeks,
-              including an internal AI hub that 20+ employees now use.
+              including the backend for an AI copilot and an internal AI tools hub that 20+ employees now use.
               Before that I was at{' '}
               <span className="text-text font-semibold">Tawasoul</span> (backend and security) and{' '}
               <span className="text-text font-semibold">The Digital Hub</span> (full-stack).
             </p>
             <p>
               I got into programming because I wanted to know how things work, not just use apps, but truly understand what's happening underneath.
-              That curiosity mostly points at the backend now, at how an API is put together and where its auth quietly falls apart.
-              At Tawasoul I reviewed a Postgres backend serving 500+ users, handed the founder a prioritized fix list, and then rebuilt the authentication myself.
+              That curiosity points squarely at the backend now, at how an API is put together and where its auth quietly falls apart.
+              At Tawasoul I reviewed a live Postgres backend serving 500+ users, handed the founder a ranked fix list, and then rebuilt the authentication myself.
             </p>
             <p>
               Outside of code, I helped create{' '}
@@ -50,6 +50,18 @@ export default function About() {
           </div>
 
           <div className="space-y-4">
+            <div className="card p-5">
+              <h3 className="text-xs font-mono text-green uppercase tracking-widest mb-3 font-semibold">Education</h3>
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <div className="text-sm text-text font-semibold">{education.school}</div>
+                  <div className="text-xs text-accent mt-0.5">{education.degree}</div>
+                  <div className="text-xs text-muted mt-1.5 leading-relaxed">{education.note}</div>
+                </div>
+                <span className="font-mono text-xs text-muted whitespace-nowrap flex-shrink-0">{education.period}</span>
+              </div>
+            </div>
+
             <div className="card p-5">
               <h3 className="text-xs font-mono text-blue uppercase tracking-widest mb-3 font-semibold">Certifications</h3>
               <div className="space-y-2.5">
