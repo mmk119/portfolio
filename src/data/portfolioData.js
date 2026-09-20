@@ -173,7 +173,7 @@ export const projects = [
     description:
       "Trained a U-Net model to segment brain tumors in medical scans, pixel by pixel, owning both the training and the evaluation side. It was my first real deep dive into medical imaging and honestly one of the most satisfying projects I've done.",
     stack: ["Python", "U-Net", "CNN", "PyTorch"],
-    github: "https://github.com/mmk119",
+    github: null,
     live: null,
     featured: false,
   },
@@ -186,7 +186,7 @@ export const projects = [
     description:
       "A hospital management database covering patients, doctors, appointments, medical records, and more. Fully normalized schema with stored procedures and complex queries. The kind of project that teaches you why database design matters before you write a single line of app code.",
     stack: ["MySQL", "Database Design", "SQL"],
-    github: "https://github.com/mmk119",
+    github: null,
     live: null,
     featured: false,
   },
