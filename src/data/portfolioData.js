@@ -359,6 +359,12 @@ export const hireReasons = [
 
 export const certifications = [
   {
+    name: "HPE Software Engineering Job Simulation",
+    issuer: "Forage",
+    year: "2026",
+    url: null,
+  },
+  {
     name: "Model Context Protocol: Advanced Topics",
     issuer: "Claude Academy",
     year: "2026",
