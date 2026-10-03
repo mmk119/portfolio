@@ -362,7 +362,7 @@ export const certifications = [
     name: "HPE Software Engineering Job Simulation",
     issuer: "Forage",
     year: "2026",
-    url: null,
+    url: "https://www.theforage.com/completion-certificates/fgHAi6dLhpRsGKyyN/da2T3WZCbMAJD7bNB_fgHAi6dLhpRsGKyyN_6ab6c3f75bf1182d207b09ec_1791026010140_completion_certificate.pdf",
   },
   {
     name: "Model Context Protocol: Advanced Topics",
