@@ -359,6 +359,12 @@ export const hireReasons = [
 
 export const certifications = [
   {
+    name: "N8N102 Integrations: APIs and Connected Workflows",
+    issuer: "n8n Academy",
+    year: "2026",
+    url: null,
+  },
+  {
     name: "HPE Software Engineering Job Simulation",
     issuer: "Forage",
     year: "2026",
